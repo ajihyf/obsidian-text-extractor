@@ -22,13 +22,13 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 7.17.0
-          run_install: true
+          version: 10.10.0
+          run_install: false
 
       - name: Use Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: "2.x"
 
       - name: Build Lib
         id: build_lib
